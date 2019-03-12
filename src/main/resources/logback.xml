@@ -9,6 +9,9 @@
     <appender-ref ref="STDOUT"/>
   </root>
 
+  <logger additivity="false" level="info" name="io.netty">
+    <appender-ref ref="STDOUT"/>
+  </logger>
   <logger additivity="false" level="debug" name="org.apache">
     <appender-ref ref="STDOUT"/>
   </logger>
