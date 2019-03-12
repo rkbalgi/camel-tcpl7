@@ -15,8 +15,8 @@ public class S3Test {
 
     AmazonS3 client = AmazonS3ClientBuilder.standard()
         .withCredentials(new AWSStaticCredentialsProvider(
-            new BasicAWSCredentials("AKIAJX2RRTSASWBJLYPQ",
-                "BAH2FxlTrw1hVWyB8FwXE62Dqeu63b11WowFTtKD"))).build();
+            new BasicAWSCredentials("abc",
+                "xyz"))).build();
 
     client.listBuckets().forEach(System.out::println);
 
